@@ -1,8 +1,8 @@
 # Container image that runs your code
-FROM alpine:3.16
+FROM alpine:3.18
 
 RUN apk --no-cache add lftp libsass
-Run apk --no-cache add zola --repository https://dl-cdn.alpinelinux.org/alpine/v3.16/community
+Run apk --no-cache add zola --repository https://dl-cdn.alpinelinux.org/alpine/v3.18/community
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
