@@ -1,4 +1,5 @@
 #!/bin/sh -l
+git lfs pull
 zola build || exit 1
 
 lftp -f "
