@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM alpine:3.17
+FROM alpine:3.18
 
 RUN apk --no-cache add lftp libsass
 Run apk --no-cache add zola --repository https://dl-cdn.alpinelinux.org/alpine/v3.17/community
