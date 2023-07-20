@@ -1,5 +1,4 @@
 #!/bin/sh -l
-git lfs fetch --all
 zola build || exit 1
 
 lftp -f "
